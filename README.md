@@ -1,5 +1,4 @@
-![Balek Logo](./resources/Balek.svg)
-# Balek
+# ![Balek Logo](./resources/balekLogo.png) Balek
 Full Stack Web Application Framework  
 
 For developing, building, and deploying web applications that are remotely accessible and persist separate from their interfaces.  
@@ -15,3 +14,4 @@ To be released here once [pre alpha conditions](./PAC.md) are met
 ## For the adventurous
 
 Currently living [here](https://github.com/ephedrandrox/balek) in a pre-pre-alpha multiple branch state
+![Balek Logo](./resources/Balek.svg)

@@ -1,6 +1,6 @@
 # Pre Alpha Conditions
 Pre-Alpha Balek should be prepared for distribution and consumption by developers
-- [ ] Finish adding things to this list  
+- [ ] Finished modifying this list  
 ## Documentation
 - [ ] Write the Developer Documentation
 - [ ] Write the User Documentation
