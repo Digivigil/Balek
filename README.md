@@ -13,5 +13,6 @@ To be released here once [pre alpha conditions](./PAC.md) are met
 
 ## For the adventurous
 
-Currently living [here](https://github.com/ephedrandrox/balek) in a pre-pre-alpha multiple branch state
+Currently living [here](https://github.com/ephedrandrox/balek) in a pre-pre-alpha multiple branch state  
+
 ![Balek Logo](./resources/Balek.svg)
