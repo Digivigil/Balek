@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es2022",
+    "module": "es2022",
+    "moduleResolution": "node",
+    "outDir": "./out",
+    "rootDir": "/",
+    "strict": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./tests/**/*.ts"
+  ],
+  "typedocOptions": {
+    "entryPoints": ["src/"],
+    "entryPointStrategy": "expand",
+    "out": "docs",
+    "plugin": "none",
+    "readme": "./documentation/TypeDoc/TypeDocIndex.md",
+    "name": "Balek"
+  }
+}
