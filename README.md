@@ -12,7 +12,7 @@ Once refactored, Balek will provide a TypeScript framework for building web appl
 
 ## Repository Output Links
 [Jest-Stare HTML output of the Jest tests and todos](https://www.digivigil.com/docs/jest-stare/)  
-[HTML Coverage of Jest tests](https://www.digivigil.com/docs/jest-stare/)   
+[HTML Coverage of Jest tests](https://www.digivigil.com/docs/coverage/)   
 [TypeDoc Output](https://www.digivigil.com/docs/)  
 
 ## For the adventurous
