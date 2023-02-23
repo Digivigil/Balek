@@ -4,6 +4,9 @@ node_modules/
 
 /docs/
 
-/config/
 
 builds/dev/data/
+
+jest-stare/
+
+config/
