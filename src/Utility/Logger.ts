@@ -1,3 +1,4 @@
+//export let log;
 /**
  * exports Logger
  * @module Logger
@@ -5,9 +6,9 @@
  */
 
 const pino = require("pino");
-const pinoElastic = require("pino-elasticsearch");
+//const pinoElastic = require("pino-elasticsearch");
 
-const streamToElastic = pinoElastic({
+/*const streamToElastic = pinoElastic({
   index: "an-index",
   consistency: "one",
   node: "http://localhost:9200",
@@ -18,8 +19,14 @@ const Logger = pino(
   {
     name: "balek",
     level: process.env.PINO_LOG_LEVEL || "info",
-  },
-  streamToElastic
+  }//,
+  //streamToElastic
 );
+*/
 
-export default Logger;
+const Log = pino({
+    timestamp: pino.stdTimeFunctions.isoTime,
+});
+
+export default Log;
+

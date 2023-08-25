@@ -72,5 +72,24 @@ describe("Testing Configuration Class", () => {
     }
   });
 
+  test("Set Object as setting", (done) => {
+    if (databaseObservable) {
+      databaseObservable.pipe(skip(1), take(1)).subscribe((database) => {
+        expect(database).toMatch("nota string");
+        done();
+      });
+      configuration.set("database.mongo.database", {
+        host: "hostname",
+        port: 2345,
+        user: "usernameString",
+        password: "passwordString",
+        database: "databaseString"
+      });
+    } else {
+      expect("not").toMatch("diaplode");
+      done();
+    }
+  });
+
   test.skip("if an object is passed as a setting to set, make it change all things inside first", () => {});
 });

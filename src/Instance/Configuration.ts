@@ -27,6 +27,7 @@ import { MapObject } from "../Utility/DataStructures";
 import { CommandLineArgumentsMap } from "./Configuration/ArgMap";
 import { EnvironmentVariablesMap } from "./Configuration/EnvMap";
 import * as fs from "node:fs";
+import path from "path"
 /**
  * The path to the package.json file
  */
@@ -41,6 +42,12 @@ let balekFilePath = "./config/balek.json";
  * @param configuration The Configuration to save
  */
 const saveBalekConfiguration = (configuration: BalekConfiguration) => {
+  const dirPath = path.parse(balekFilePath).dir
+  //Check if the directory the config file is supposed to be in exists
+  if(!fs.existsSync(dirPath)){
+    //Create it and any parent directories
+    fs.mkdirSync(dirPath, { recursive: true });
+  }
   fs.writeFileSync(
     balekFilePath,
     JSON.stringify(configuration, null, 2),

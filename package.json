@@ -1,8 +1,8 @@
 {
   "name": "balek",
   "description": "Balek",
-  "version": "0.0.02-pre",
-  "main": "balek.profile.js",
+  "version": "0.0.03-pre",
+  "main": "index.ts",
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com:digivigil/balek.git"

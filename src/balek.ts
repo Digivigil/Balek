@@ -5,24 +5,32 @@
  */
 
 import { BalekServerInstance } from "./Instance";
+
+import  Log  from "./Utility/Logger";
 //Start Function
 async function start() {
   try {
+    const newError = new Error("Noooppe")
+    throw(newError )
     let newInstance = new BalekServerInstance();
     await newInstance.isReady();
     await newInstance.start();
-    console.log("Instance is ready");
-  } catch (Error) {
-    console.log(`Error While Starting ${Error}`);
+    Log.info("Instance is ready");
+  } catch (error) {
+    Log.error({error: structuredClone(error)},"Error while starting")
+    //Log.info(`Error While Starting ${Error}`);
   } finally {
-    console.log("Finally");
+
+    Log.info("Finally");
   }
 }
-console.log("Balek Instance Starting");
+Log.info("Balek Instance Starting");
 start()
   .then(() => {
-    console.log("Started");
+    Log.info("Started")
+    //console.log("Started");
   })
-  .catch((Error) => {
-    console.log("Error:", Error);
+  .catch((error) => {
+    Log.error({error},"Error while starting")
+    //console.log("Error:", Error);
   });
