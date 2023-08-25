@@ -27,7 +27,7 @@ import { MapObject } from "../Utility/DataStructures";
 import { CommandLineArgumentsMap } from "./Configuration/ArgMap";
 import { EnvironmentVariablesMap } from "./Configuration/EnvMap";
 import * as fs from "node:fs";
-import path from "path"
+import * as path from "path";
 /**
  * The path to the package.json file
  */

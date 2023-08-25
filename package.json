@@ -1,7 +1,7 @@
 {
   "name": "balek",
   "description": "Balek",
-  "version": "0.0.04-pre",
+  "version": "0.0.05-pre",
   "main": "index.ts",
   "repository": {
     "type": "git",
